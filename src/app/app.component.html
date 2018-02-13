@@ -1,20 +1,113 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<mat-toolbar class="app-toolbar" color="primary">
+	<mat-toolbar-row>
+		  <button mat-button>
+		  <mat-icon>home</mat-icon>
+		  <span>AMSWeb</span>
+		  </button>
+		  <button mat-button>
+		  <mat-icon>launch</mat-icon>
+		  <span>Manage Servers</span>
+		  </button>
+	</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-sidenav-container">
+	<mat-sidenav class="sidenav" mode="side" opened="true" color="primary">
+<mat-list>
+  <h3 class="sidenavheader" mat-subheader>Servers</h3>
+  <mat-list-item class="sidenavitem">
+    <h4 mat-line>APP Server</h4>
+  </mat-list-item>
+  <mat-divider ></mat-divider>
+    <mat-list-item class="sidenavitem">
+    <h4 mat-line>WEB Server</h4>
+  </mat-list-item>
+   <mat-divider ></mat-divider>
+    <mat-list-item class="sidenavitem">
+    <h4 mat-line>DB Server</h4>
+  </mat-list-item>
+</mat-list>
+	</mat-sidenav>
+	<mat-sidenav-content  class="example-sidenav-content">
+		<mat-toolbar class="agent-toolbar" color="primary">
+			<mat-toolbar-row>
+				<span>APP Server</span>
+				<mat-icon>autorenew</mat-icon>
+			</mat-toolbar-row>
+		</mat-toolbar>
+		<mat-tab-group>
+  <mat-tab label="Overview">
+  <mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        SSTOB
+      </mat-panel-title>
+	  <mat-icon>autorenew</mat-icon>
+    </mat-expansion-panel-header>
+   <mat-card>
+  <mat-card-header>
+    <mat-card-title>Version</mat-card-title>
+	<mat-icon>autorenew</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+     3.1
+    </p>
+  </mat-card-content>
+</mat-card>
+       <mat-card>
+  <mat-card-header>
+    <mat-card-title>Current Status</mat-card-title>
+	<mat-icon>autorenew</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+    NOT OPERATIONAL
+    </p>
+  </mat-card-content>
+</mat-card>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        OBAPI
+      </mat-panel-title>
+	  <mat-icon>autorenew</mat-icon>
+    </mat-expansion-panel-header>
+   <mat-card>
+  <mat-card-header>
+    <mat-card-title>Version</mat-card-title>
+	<mat-icon>autorenew</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+     3.1
+    </p>
+  </mat-card-content>
+</mat-card>
+       <mat-card>
+  <mat-card-header>
+    <mat-card-title>Current Status</mat-card-title>
+	<mat-icon>autorenew</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+    NOT OPERATIONAL
+    </p>
+  </mat-card-content>
+</mat-card>
+  </mat-expansion-panel>
+  </mat-accordion>
+  </mat-tab>
+  <mat-tab label="Logs/Configs">
+  </mat-tab>
+   <mat-tab label="General Operations">
+   </mat-tab>
+</mat-tab-group>
+		<mat-toolbar class="agent-footbar" color="primary">
+			<mat-toolbar-row>
+				<span>Powered by ESQ</span>
+			</mat-toolbar-row>
+		</mat-toolbar>
+	</mat-sidenav-content>
+</mat-sidenav-container>

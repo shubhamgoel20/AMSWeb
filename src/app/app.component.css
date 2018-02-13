@@ -1,0 +1,55 @@
+.app-toolbar{
+position: fixed;
+height: 64px;
+top: 0;
+left: 0;
+right: 0;
+z-index: 2;
+box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+color: hsla(0,0%,100%,.87);
+}
+
+.example-sidenav-container{
+position: static;
+}
+
+
+.example-sidenav-content{
+display: block;
+}
+
+
+.agent-toolbar{
+padding: 15px;	
+height: 90px;
+font-size: 20px;
+}
+
+.agent-footbar{	
+min-height: 32px;
+height: 32px;
+font-size: 10px;
+}
+
+.sidenav{
+box-shadow: 3px 0 6px rgba(0,0,0,.24);
+width: 250px;
+overflow-y: scroll;
+}
+.sidenavitem{
+box-sizing: border-box;
+display: block;
+font-size: 15px;
+line-height: 47px;
+color: rgba(0,0,0,.54);
+cursor: pointer;
+position: static;
+}
+
+.sidenavheader{
+font-size: 12px;
+font-weight: 500;
+text-transform: uppercase;
+background: rgba(0,0,0,.32);
+color: hsla(0,0%,100%,.87);
+}
